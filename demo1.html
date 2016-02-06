@@ -1,0 +1,39 @@
+<!--
+<!doctype html>
+<html  lang="en">
+  <head> </head>
+    <body> </body>
+</html>-->
+
+<!doctype html>
+<html  lang="en">
+  <head> demo</head>
+    <body>
+        <h4>promt</h4>
+        <p>deez nuts</p>
+
+        <script>
+            //
+            //
+//            var y = prompt("what is your favorite team")
+//            alert("so you support " + y)
+//            console.log("the no useless team as " + y)
+            var now = new Date();
+            var night = new Date(
+                now.getFullYear(),
+                now.getMonth(),
+                now.getDate() +1,
+                0,0,0
+            );
+            var msTillMidnight = night.getTime() - now.getTime();
+            var myCountdown1 = new Countdown({
+                time: msTillMidnight / 1000,
+                width: 200,
+                height: 55,
+                rangeHi: "hour",
+                style: "flip"
+            })
+            alert(varmyCountdown1)
+        </script>
+    </body>
+</html>
