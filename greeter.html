@@ -8,11 +8,15 @@
             <span id="hometown">
             </span>
             <p></p>
+            <div id="source">Fetch the textContent of source and save it as a variable.</div>
+            <div id="destination"></div>
             <script>
                 var visitor_name=prompt("enter your name")
                 document.querySelector('p').textContent = "hi "+visitor_name+" welcome to this website"
                 var town = prompt("what is your home town")
                 document.querySelector('#hometown').textContent = "hi "+visitor_name+" we are pleased to have a visitor from "+town
+                var content = document.querySelector('#Source')
+                document.querySelector('#destination').textContent = content+content
             </script>
         </div>
     </body>
