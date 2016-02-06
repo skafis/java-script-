@@ -5,12 +5,14 @@
     <body>
         <div id="greeting">
             <p></p>
-            <span id="hometown"></span>
+            <span id="hometown">
+            </span>
             <p></p>
             <script>
                 var visitor_name=prompt("enter your name")
                 document.querySelector('p').textContent = "hi "+visitor_name+" welcome to this website"
                 var town = prompt("what is your home town")
+                document.querySelector('#hometown').textContent = "hi "+visitor_name+" we are pleased to have a visitor from "+town
             </script>
         </div>
     </body>
